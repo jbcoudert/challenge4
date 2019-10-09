@@ -6,10 +6,48 @@ header {
     background-color: #2056ac;
     color: white;
 }
+.logo-title {
+    padding: 3rem 0;
+}
+.fa-bars {
+    display: none;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem;
+}
+li {
+    padding-bottom: .8rem;
+}
+li:hover a  {
+    background-color: white;
+    color: #2056ac;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav {
+    margin: auto;
+    max-width: 800px;
+}
+ul {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+div {
+    padding: 1rem;
+}
 .contain {
+    margin: auto;
     max-width: 1200px;
 }
-
+img {
+    max-width: 100%;
+}
 .flex {
     display: flex;
     flex-direction: row;
@@ -21,7 +59,67 @@ header {
     width: 60%;
 }
 .before-footer {
-    background-color: #2056ac;
+    background-color: #3965ad;
     padding: 0.5rem 0;
     width: 100%;
+}
+footer {
+    color: white;
+    background-color: #2056ac;
+    padding: 2rem 0;
+}
+section:nth-child(6) {
+    background-color: #d0e2ff;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+section i {
+    font-size: 2rem;
+}
+button {
+    background-color: #91aad1;
+    padding: 0.5rem 1rem;
+    border:none;
+    color: white;
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .section-ipad {
+        display: flex;
+        flex-direction: column;
+    }
+    ul {
+        padding: 0;
+    }
+    nav {
+        max-width: 640px;
+    }
+}
+@media screen and (max-width:767px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        padding:1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    ul {
+        display: none;
+    }
+    .fa-bars {
+        display: initial;
+        
+    }
+    header, .logo-title {
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h1, header i {
+        padding-left: 1.5rem;
+    }
 }
